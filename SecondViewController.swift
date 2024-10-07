@@ -87,7 +87,7 @@ class SecondViewController: UIViewController {
             count+=1
         }
         textView.text = people[count].twoString()
-        if(count == people.count-1){
+        if(count == people.count){
             scoreLabel.text = "You scored: \(score)"
         }
         textField.text = ""
