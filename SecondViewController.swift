@@ -1,32 +1,38 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  GoughClassmateFun
 //
-//  Created by LOGAN GOUGH on 10/2/24.
+//  Created by LOGAN GOUGH on 10/4/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
+    
     @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var nickField: UITextField!
     
-    @IBOutlet weak var gpaField: UITextField!
+
     
-    @IBOutlet weak var yearField: UITextField!
     
-    @IBOutlet weak var ageField: UITextField!
     
+    
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var people = [Classmate]()
     
     var count = 0
-    var people = [Classmate]()
+    var score = 0
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         var a = Classmate(name: "Ryan Sp",nickName: "Rainbow Ryan", age: 16, year: 11, gpa: 4.7)
         var b = Classmate(name: "Michael",nickName: "Michael Michael Motorcycle", age: 16, year: 11, gpa: 1.1)
         var c = Classmate(name: "Sean",nickName: "Boat Gone Sean", age: 16, year: 11, gpa: 3.2)
@@ -58,71 +64,36 @@ class ViewController: UIViewController {
         people.append(m)
         people.append(n)
         people.append(o)
-        textView.text = people[count].toString()
+        textView.text = people[count].twoString()
+        
+        
         
         
     }
     
-    @IBAction func nextButton(_ sender: UIButton) {
-        if(count < people.count-1){
-            count+=1
-            textView.text = people[count].toString()
-            
-        }
-    }
-    
-    @IBAction func previousButton(_ sender: UIButton) {
-        if(count != 0){
-            count-=1
-            textView.text = people[count].toString()
-        }
-            
-        
-    }
-    
-    @IBAction func addButton(_ sender: UIButton) {
-        var one = "\(nameField.text!)"
-        var two = "\(nickField.text!)"
-        var cow = ageField.text!
-        var cat = yearField.text!
-        var dog = gpaField.text!
-        var three = Int(cow) ?? 0
-        var four = Int(cat) ?? 0
-        var five = Double(dog) ?? 0
-        var blah = Classmate(name: one, nickName: two, age: three, year: four, gpa: five)
-        people.append(blah)
-    }
-    
-    
-    
-    @IBAction func sort(_ sender: UIButton) {
-        
-        
-        people.sort(by: {$0.name < $1.name })
-        
-        count = 0
-        textView.text = people[count].toString()
-        
-        for i in 0..<people.count{
-            print(people[i].toString())
-        }
-    }
-    
-    
-    @IBAction func editStudent(_ sender: UIButton) {
-        var one = "\(nameField.text!)"
-        var two = "\(nickField.text!)"
-        var cow = ageField.text!
-        var cat = yearField.text!
-        var dog = gpaField.text!
-        var three = Int(cow) ?? 0
-        var four = Int(cat) ?? 0
-        var five = Double(dog) ?? 0
-        people[count].changeAttributes(name: one, nickName: two, age: three, year: four, gpa: five)
-        textView.text = people[count].toString()
-        
-    }
-    
-    
-}
 
+    
+    @IBAction func enterButton(_ sender: UIButton) {
+        
+        if(count != people.count-1){
+            if(textField.text?.lowercased() == people[count].nickName.lowercased()){
+                score+=1
+                scoreLabel.text = "Correct"
+            }
+            else{
+                scoreLabel.text = "wrong"
+            }
+            
+            count+=1
+        }
+        textView.text = people[count].twoString()
+        if(count == people.count-1){
+            scoreLabel.text = "You scored: \(score)"
+        }
+        textField.text = ""
+        
+    }
+
+    
+
+}

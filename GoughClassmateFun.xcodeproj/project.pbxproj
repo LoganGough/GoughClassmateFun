@@ -15,6 +15,7 @@
 		BA6E53B32CAD7305003CAC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6E53B22CAD7305003CAC42 /* Assets.xcassets */; };
 		BA6E53B62CAD7305003CAC42 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA6E53B52CAD7305003CAC42 /* Base */; };
 		BA6E53BE2CAD7359003CAC42 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E53BD2CAD7359003CAC42 /* Classmate.swift */; };
+		BAB3BCCD2CB016870070696B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3BCCC2CB016870070696B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA6E53B52CAD7305003CAC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6E53B72CAD7305003CAC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6E53BD2CAD7359003CAC42 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
+		BAB3BCCC2CB016870070696B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		BA6E539A2CAD7303003CAC42 = {
 			isa = PBXGroup;
 			children = (
+				BAB3BCCC2CB016870070696B /* SecondViewController.swift */,
 				BA6E53A52CAD7303003CAC42 /* GoughClassmateFun */,
 				BA6E53A42CAD7303003CAC42 /* Products */,
 			);
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB3BCCD2CB016870070696B /* SecondViewController.swift in Sources */,
 				BA6E53AB2CAD7303003CAC42 /* ViewController.swift in Sources */,
 				BA6E53BE2CAD7359003CAC42 /* Classmate.swift in Sources */,
 				BA6E53A72CAD7303003CAC42 /* AppDelegate.swift in Sources */,
@@ -300,6 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8MY4CG229;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoughClassmateFun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = clc.GoughClassmateFun;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.GoughClassmateFun6543;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8MY4CG229;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoughClassmateFun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -339,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = clc.GoughClassmateFun;
+				PRODUCT_BUNDLE_IDENTIFIER = clc.GoughClassmateFun6543;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

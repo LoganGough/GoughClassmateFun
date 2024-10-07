@@ -21,7 +21,13 @@ class Classmate{
         self.year = year
         self.gpa = gpa
     }
-    
+    func changeAttributes(name: String, nickName: String, age: Int, year: Int, gpa: Double){
+        self.name = name
+        self.nickName = nickName
+        self.age = age
+        self.year = year
+        self.gpa = gpa
+    }
     
     
     
@@ -29,5 +35,8 @@ class Classmate{
         return "Name: \(name)\nNickname: \(nickName)\nAge: \(age)\nYear: \(year)\nGPA: \(gpa)"
         
     }
-    
+    func twoString()->String{
+        return "Name: \(name)\nNickname: --------\nAge: \(age)\nYear: \(year)\nGPA: \(gpa)"
+        
+    }
 }
