@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA12E5E62CB7FF7C009DE0DA /* SecondClassmateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12E5E52CB7FF7C009DE0DA /* SecondClassmateViewController.swift */; };
+		BA12E5E82CB80026009DE0DA /* CrazyCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12E5E72CB80026009DE0DA /* CrazyCell3.swift */; };
 		BA6E53A72CAD7303003CAC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E53A62CAD7303003CAC42 /* AppDelegate.swift */; };
 		BA6E53A92CAD7303003CAC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E53A82CAD7303003CAC42 /* SceneDelegate.swift */; };
 		BA6E53AB2CAD7303003CAC42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E53AA2CAD7303003CAC42 /* ViewController.swift */; };
@@ -16,9 +18,12 @@
 		BA6E53B62CAD7305003CAC42 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BA6E53B52CAD7305003CAC42 /* Base */; };
 		BA6E53BE2CAD7359003CAC42 /* Classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6E53BD2CAD7359003CAC42 /* Classmate.swift */; };
 		BAB3BCCD2CB016870070696B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3BCCC2CB016870070696B /* SecondViewController.swift */; };
+		BACA024A2CB95452004823C0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA02492CB95452004823C0 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA12E5E52CB7FF7C009DE0DA /* SecondClassmateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondClassmateViewController.swift; sourceTree = "<group>"; };
+		BA12E5E72CB80026009DE0DA /* CrazyCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyCell3.swift; sourceTree = "<group>"; };
 		BA6E53A32CAD7303003CAC42 /* GoughClassmateFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoughClassmateFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6E53A62CAD7303003CAC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6E53A82CAD7303003CAC42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		BA6E53B72CAD7305003CAC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6E53BD2CAD7359003CAC42 /* Classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classmate.swift; sourceTree = "<group>"; };
 		BAB3BCCC2CB016870070696B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BACA02492CB95452004823C0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		BA6E539A2CAD7303003CAC42 = {
 			isa = PBXGroup;
 			children = (
+				BACA02492CB95452004823C0 /* ThirdViewController.swift */,
+				BA12E5E72CB80026009DE0DA /* CrazyCell3.swift */,
+				BA12E5E52CB7FF7C009DE0DA /* SecondClassmateViewController.swift */,
 				BAB3BCCC2CB016870070696B /* SecondViewController.swift */,
 				BA6E53A52CAD7303003CAC42 /* GoughClassmateFun */,
 				BA6E53A42CAD7303003CAC42 /* Products */,
@@ -148,11 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB3BCCD2CB016870070696B /* SecondViewController.swift in Sources */,
+				BACA024A2CB95452004823C0 /* ThirdViewController.swift in Sources */,
 				BA6E53AB2CAD7303003CAC42 /* ViewController.swift in Sources */,
 				BA6E53BE2CAD7359003CAC42 /* Classmate.swift in Sources */,
+				BA12E5E62CB7FF7C009DE0DA /* SecondClassmateViewController.swift in Sources */,
 				BA6E53A72CAD7303003CAC42 /* AppDelegate.swift in Sources */,
 				BA6E53B12CAD7303003CAC42 /* GoughClassmateFun.xcdatamodeld in Sources */,
 				BA6E53A92CAD7303003CAC42 /* SceneDelegate.swift in Sources */,
+				BA12E5E82CB80026009DE0DA /* CrazyCell3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
