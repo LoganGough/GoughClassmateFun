@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
 
     @IBOutlet weak var textView: UITextView!
     
@@ -22,11 +24,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var ageField: UITextField!
     
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    
     var count = 0
     var people = [Classmate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerView.delegate = self
+        pickerView.dataSource = self
         var a = Classmate(name: "Ryan Sp",nickName: "Rainbow Ryan", age: 16, year: 11, gpa: 4.7)
         var b = Classmate(name: "Michael",nickName: "Michael Michael Motorcycle", age: 16, year: 11, gpa: 1.1)
         var c = Classmate(name: "Sean",nickName: "Boat Gone Sean", age: 16, year: 11, gpa: 3.2)
@@ -121,6 +128,28 @@ class ViewController: UIViewController {
         people[count].changeAttributes(name: one, nickName: two, age: three, year: four, gpa: five)
         textView.text = people[count].toString()
         
+    }
+    
+    
+    
+    @IBAction func mapButton(_ sender: UIButton) {
+        
+        
+        
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if component == 0{
+                    return people.count
+                }
+                return 0
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        textView.text = people[row].toString()
+        return people[row].name
     }
     
     
